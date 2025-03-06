@@ -98,7 +98,7 @@ cd project_3D_developer_portfolio
 Install the project dependencies using npm:
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
 
 **Set Up Environment Variables**
