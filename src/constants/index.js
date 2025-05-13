@@ -35,6 +35,10 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "projects",
+    title: "Projects",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -42,11 +46,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Mobile Developer",
     icon: mobile,
   },
   {
@@ -54,7 +58,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Full Stack Developer",
     icon: creator,
   },
 ];
@@ -97,74 +101,62 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
+    name: "Next.js",
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "docker",
+    name: "PostgreSQL",
     icon: docker,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Full Stack Developer",
+    company_name: "KJ-GROUPS",
+    icon: starbucks, // Replace with appropriate icon
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Dec 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed a modern portfolio platform showcasing four restaurant brands under KJ-GROUPS.",
+      "Built responsive, multi-page React-based websites with Stripe payment integration and reservation systems.",
+      "Created a unified admin panel for centralized management of orders and bookings.",
+      "Improved restaurant order management efficiency by 40% and reduced booking time by 50%.",
+      "Used React, Node.js, TypeScript, Sequelize SQL, Supabase, Tailwind CSS, Framer Motion, and Vercel."
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Frontend Developer Intern",
+    company_name: "DevClubM, Faisalabad",
+    icon: tesla, // Replace with appropriate icon
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built a web portal for a Canada-based home food service to automate ordering processes.",
+      "Developed an enterprise-level MERN stack application and improved app performance by 20%.",
+      "Used Git for version control and collaborative development.",
+      "Implemented responsive design and ensuring cross-browser compatibility.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Bachelor of Science in Software Engineering",
+    company_name: "National University of Computer and Emerging Sciences (FAST), Pakistan",
+    icon: shopify, // Replace with appropriate icon
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "2019 - 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed coursework in Data Structures, Algorithms, Database Systems, and Web Development.",
+      "Developed a UML Class Diagram Compiler as a Final Year Project with 90% syntactic and semantic accuracy.",
+      "Conducted air pollution data analysis using Python and machine learning models.",
+      "Participated in coding competitions and hackathons."
     ],
   },
 ];
@@ -172,92 +164,141 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Ahmad developed a fantastic website for our restaurant that not only looks great but also significantly improved our order management system.",
+    name: "Jung Kim",
+    designation: "Owner",
+    company: "Korean BBQ Edinburgh",
+    image: "https://randomuser.me/api/portraits/men/41.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "The reservation system Ahmad built for us reduced our booking time by 50% and improved customer satisfaction. A true professional who understands both design and functionality.",
+    name: "Sarah Chen",
+    designation: "Manager",
+    company: "Soul Sushi",
+    image: "https://randomuser.me/api/portraits/women/32.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Working with Ahmad on our online ordering platform was a pleasure. His attention to detail and technical expertise resulted in a seamless user experience for our customers.",
+    name: "David Park",
+    designation: "Director",
+    company: "KJ-GROUPS",
+    image: "https://randomuser.me/api/portraits/men/12.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "KJ-GROUPS Portfolio Site",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Multi-site restaurant platform with payment integration, reservation system, and order management features. Built to showcase four restaurant brands under one umbrella.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "node",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "stripe",
         color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
       },
       {
         name: "supabase",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: carrent, // Use an appropriate image
+    source_code_link: "https://github.com/",
+    live_site_link: "https://www.kjgroups.co.uk/",
+  },
+  {
+    name: "Soul Sushi & Korean Munchies",
+    description:
+      "Online ordering and menu systems for two restaurants with Stripe payment integration. Includes responsive design and interactive menu displays.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "stripe",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: jobit, // Use an appropriate image
+    source_code_link: "https://github.com/",
+    live_site_link: "https://www.soulsushi.kjgroups.co.uk/",
+  },
+  {
+    name: "Korean BBQ Edinburgh & Dundee",
+    description:
+      "Table reservation systems for two restaurant locations with responsive UI and animated elements. Includes booking management and user notifications.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "framer-motion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "sequelize",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide, // Use an appropriate image
+    source_code_link: "https://github.com/",
+    live_site_link: "https://www.koreanbbq.kjgroups.co.uk/",
+  },
+  {
+    name: "UML Class Diagram Compiler",
+    description:
+      "Final Year Project that converts UML diagrams into skeleton code. Includes XML-to-string parser and code generator. Achieved 90% syntactic and semantic accuracy.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "xml",
+        color: "green-text-gradient",
+      },
+      {
+        name: "parsing",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide, // Use an appropriate image
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Air Pollution Analysis",
+    description:
+      "Python project analyzing PM 2.5 data (2016–2022) using Pandas, Matplotlib, and machine learning models for predictions. Achieved 85% accuracy with linear and logistic regression.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "pandas",
+        color: "green-text-gradient",
+      },
+      {
+        name: "machine-learning",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide, // Use an appropriate image
     source_code_link: "https://github.com/",
   },
 ];
