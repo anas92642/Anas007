@@ -41,21 +41,19 @@ const Navbar = () => {
             setActive("");
             window.scrollTo(0, 0);
           }}
-        >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
+        >          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Adrian &nbsp;
-            <span className='sm:block hidden'> | JavaScript Mastery</span>
+            Ahmad Yasir &nbsp;
+            <span className='sm:block hidden'> | Full Stack Developer</span>
           </p>
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
-              key={nav.id}
-              className={`${
+              key={nav.id}              className={`${
                 active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-[#915EFF] text-[18px] font-medium cursor-pointer transition-colors`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -79,10 +77,9 @@ const Navbar = () => {
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
                 <li
-                  key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                  key={nav.id}                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
                     active === nav.title ? "text-white" : "text-secondary"
-                  }`}
+                  } hover:text-[#915EFF] transition-colors`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
